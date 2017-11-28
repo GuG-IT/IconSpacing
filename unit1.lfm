@@ -1,0 +1,59 @@
+object frmIconSpacing: TfrmIconSpacing
+  Left = 434
+  Height = 140
+  Top = 156
+  Width = 122
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Icon Spacing'
+  ClientHeight = 140
+  ClientWidth = 122
+  OnActivate = FormActivate
+  Position = poDesktopCenter
+  LCLVersion = '1.6.4.0'
+  object rbtnWindow10: TRadioButton
+    Left = 8
+    Height = 19
+    Top = 8
+    Width = 84
+    Caption = 'Windows 10'
+    Checked = True
+    OnChange = rbtnWindow10Change
+    TabOrder = 4
+    TabStop = True
+  end
+  object rbtnWindows7: TRadioButton
+    Left = 8
+    Height = 19
+    Top = 40
+    Width = 78
+    Caption = 'Windows 7'
+    OnChange = rbtnWindow10Change
+    TabOrder = 0
+  end
+  object rbtnOwn: TRadioButton
+    Left = 8
+    Height = 19
+    Top = 72
+    Width = 20
+    OnChange = rbtnWindow10Change
+    TabOrder = 1
+  end
+  object edtOwn: TEdit
+    Left = 32
+    Height = 23
+    Top = 72
+    Width = 80
+    Enabled = False
+    TabOrder = 2
+  end
+  object btnSave: TButton
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 104
+    Caption = '&Speichern'
+    OnClick = btnSaveClick
+    TabOrder = 3
+  end
+end
